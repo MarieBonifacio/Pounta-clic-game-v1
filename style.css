@@ -1,0 +1,135 @@
+:root{
+    --couleurprincipale:rgba(25,25,112 ,1);
+    --fondcadre : rgba(26,4,126,0.8);
+    --mothcolor : rgb(94,51,8);
+    --blanc : rgba(255,255,255 ,1);
+}
+
+body{
+    padding: 0;
+    margin : 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(fond4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#cadre{
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    width: 75vw;
+    height: 75vh;
+    border: 40px solid;
+    border-color: rgba(0,0,0,0.17);    
+    margin-top: 3vh;
+    background-color: var(--fondcadre);
+    position : relative;
+    font-size: 100px;
+    font-weight: bolder;
+}
+
+header{
+    display: flex;
+    min-width: 100%;
+    height: 6vw;
+    background-image:radial-gradient(circle at center, #373737, black);
+    align-items: center;
+    justify-content: space-between;
+}
+
+logo{
+    height: 3vw;
+    width: 3vw;
+    background-color: white;
+}
+
+nav{
+    min-width: 80vw;
+    height: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 10vw;
+}
+
+button{
+display:inline-block;
+padding:1em 1.4em;
+margin:0 0.3em 0.3em 0;
+border-radius:0.15em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+text-transform:uppercase;
+font-weight:800;
+color:white;
+background-color: var(--couleurprincipale);
+box-shadow:inset 0 -0.6em 0 -0.35em rgba(0,0,0,0.17);
+text-align:center;
+position:relative;
+}
+a.button6:active{
+top:0.1em;
+}
+@media all and (max-width:30em){
+ a.button6{
+display:block;
+margin:0.4em auto;
+}
+}
+
+#divscore{
+    height: 2vw;
+    width: 10vh;
+    border: solid 4px;
+    border-color: var(--couleurprincipale);
+    color: white;
+    margin-right: 4vw;
+    padding: 1vw;
+
+}
+
+.rond{
+    border-radius: 50%;
+    position: absolute;
+}
+
+.carré{
+    position: absolute;
+}
+
+.ovale{
+    border-radius: 60px / 40px;
+    position: absolute;
+}
+
+
+.m1{
+    position: absolute;
+    background-color: var(--mothcolor);
+}
+
+#divchrono{
+    height: 30px;
+    width: 90%;
+    border: solid 4px;
+    border-color: var(--blanc);
+    color:var(--blanc);
+    margin-right: 2vw;
+    margin-left : 2vw;
+    padding-right: 1vw;
+    position: relative;
+}
+
+#progression{
+position: absolute;
+height: 30px;
+width: 0px;
+background-color: var(--blanc)
+}
